@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate multiplication tables easily with our online tool. Input a number and get the table you need instantly.">
+    <meta name="keywords" content="multiplication table, math, mathematics, generate, online tool">
+    <meta name="author" content="Abhishek Gaikwad">
+    <title>Multiplication Table Generator</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>body {
+        background-image: url('math_background.jpg'); /* Your background image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 1s ease; /* Fade in animation */
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    input[type="number"], button {
+        padding: 10px;
+        margin: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+    }
+    
+    button {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    table {
+        margin-top: 20px;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    th {
+        background-color: #007bff;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplication Table Generator</h1>
+        <input type="number" id="numberInput" placeholder="Enter a number">
+        <button onclick="generateTable()">Generate Table</button>
+        <div id="tableContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
